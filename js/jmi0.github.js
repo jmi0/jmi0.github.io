@@ -4,15 +4,7 @@ console.log('Hey Neighbor!');
 $(document).ready(function() {
 
   $('#profile-container').hide();
-  $('#profile-container').fadeIn(500);
-
-  let grad = 0;
-  setInterval(function() {
-    //if (grad < 100) grad += 1;
-    //else grad = 0;
-    $('html').css({background: `re`});
-  }, 100);
-
+  $('#profile-container').fadeIn(700);
 
   // center align
   $('#profile-container').css({top: getTop(), left: getLeft()});
@@ -26,9 +18,13 @@ $(document).ready(function() {
 
 
 function getTop() {
-  return ($(window).height() / 2) - ($('#profile-container').height() / 2);
+  let top = ($(window).height() / 2) - ($('#profile-container').height() / 2);
+  if (top < 0) top = 0;
+  return top;
 }
 
 function getLeft() {
-  return ($(window).width() / 2) - ($('#profile-container').width() / 2);
+  let left = ($(window).width() / 2) - ($('#profile-container').width() / 2);
+  if (left < 0) left = 0;
+  return left;
 }

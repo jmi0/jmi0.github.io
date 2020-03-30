@@ -1,9 +1,15 @@
-html {
+* {
+  margin: 0;
+}
+
+html, body {
   height: 100%;
   weight: 100%;
-  body {
-    background: linear-gradient(to top right, #ccffcc 0%, #ffffff 95%);
-  }
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  left: 0;
+  top: 0;
 }
 
 #profile-container {
@@ -36,10 +42,11 @@ html {
       padding: 5px;
       text-decoration: none;
       color: black;
+      opacity: .6;
     }
 
     a:hover {
-      opacity: .7;
+      opacity: 1;
     }
 
   }

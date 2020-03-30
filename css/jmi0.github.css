@@ -1,8 +1,14 @@
-html {
+* {
+  margin: 0; }
+
+html, body {
   height: 100%;
-  weight: 100%; }
-  html body {
-    background: linear-gradient(to top right, #ccffcc 0%, #ffffff 95%); }
+  weight: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  left: 0;
+  top: 0; }
 
 #profile-container {
   display: none;
@@ -22,6 +28,7 @@ html {
     #profile-container #social-links-container a {
       padding: 5px;
       text-decoration: none;
-      color: black; }
+      color: black;
+      opacity: .6; }
     #profile-container #social-links-container a:hover {
-      opacity: .7; }
+      opacity: 1; }
