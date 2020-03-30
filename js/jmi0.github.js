@@ -7,11 +7,11 @@ $(document).ready(function() {
   $('#profile-container').fadeIn(700);
 
   // center align
-  $('#profile-container').css({top: getTop(), left: getLeft()});
+  //$('#profile-container').css({top: getTop(), left: getLeft()});
 
   $(window).resize(function() {
     // keep this center aligned
-    $('#profile-container').css({top: getTop(), left: getLeft()});
+    //$('#profile-container').css({top: getTop(), left: getLeft()});
   });
 
 });

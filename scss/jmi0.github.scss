@@ -12,16 +12,24 @@ html, body {
   top: 0;
 }
 
+.center {
+  position: absolute;
+  top: 50%;
+  -moz-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
 #profile-container {
   display: none;
-  position: absolute;
+  min-width: 100%;
 
   #greeting {
-    font-size: 22px;
+    font-size: 26px;
   }
 
   #description {
-    font-size: 14px;
+    font-size: 18px;
   }
 
   div {
@@ -34,20 +42,19 @@ html, body {
     width: 100px;
   }
 
-  #social-links-container {
+}
 
-    font-size: 30px;
-
-    a {
-      padding: 5px;
-      text-decoration: none;
-      color: black;
-      opacity: .6;
-    }
-
-    a:hover {
-      opacity: 1;
-    }
-
+#social-links-container {
+  font-size: 30px;
+  a {
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    opacity: .6;
   }
+
+  a:hover {
+    opacity: 1;
+  }
+
 }

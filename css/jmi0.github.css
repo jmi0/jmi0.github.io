@@ -10,25 +10,33 @@ html, body {
   left: 0;
   top: 0; }
 
+.center {
+  position: absolute;
+  top: 50%;
+  -moz-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
 #profile-container {
   display: none;
-  position: absolute; }
+  min-width: 100%; }
   #profile-container #greeting {
-    font-size: 22px; }
+    font-size: 26px; }
   #profile-container #description {
-    font-size: 14px; }
+    font-size: 18px; }
   #profile-container div {
     font-weight: lighter;
     padding-top: 10px; }
   #profile-container #profilepic {
     border-radius: 50%;
     width: 100px; }
-  #profile-container #social-links-container {
-    font-size: 30px; }
-    #profile-container #social-links-container a {
-      padding: 5px;
-      text-decoration: none;
-      color: black;
-      opacity: .6; }
-    #profile-container #social-links-container a:hover {
-      opacity: 1; }
+
+#social-links-container {
+  font-size: 30px; }
+  #social-links-container a {
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    opacity: .6; }
+  #social-links-container a:hover {
+    opacity: 1; }
