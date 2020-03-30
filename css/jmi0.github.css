@@ -21,22 +21,25 @@ html, body {
   display: none;
   min-width: 100%; }
   #profile-container #greeting {
-    font-size: 26px; }
+    font-size: 30px; }
   #profile-container #description {
-    font-size: 18px; }
+    font-size: 22px; }
   #profile-container div {
     font-weight: lighter;
     padding-top: 10px; }
   #profile-container #profilepic {
     border-radius: 50%;
-    width: 100px; }
+    width: 110px; }
 
 #social-links-container {
-  font-size: 30px; }
+  font-size: 33px; }
   #social-links-container a {
     padding: 5px;
     text-decoration: none;
-    color: black;
-    opacity: .6; }
+    color: gray;
+    -webkit-transition: color .2s;
+    -moz-transition: color .2s;
+    -o-transition: color .2s;
+    transition: color .2s; }
   #social-links-container a:hover {
-    opacity: 1; }
+    color: black; }
