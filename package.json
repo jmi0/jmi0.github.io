@@ -1,0 +1,27 @@
+{
+  "name": "jmi0.github.io",
+  "version": "1.0.0",
+  "description": "Personal Homepage Hosted on GitHub",
+  "main": "",
+  "scripts": {
+    "prod-build": "gulp sass minifyjs minifycss image",
+    "dev-build": "gulp sass minifyjs minifycss image watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmi0/jmi0.github.io.git"
+  },
+  "author": "Joe Iannone",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jmi0/jmi0.github.io/issues"
+  },
+  "homepage": "https://github.com/jmi0/jmi0.github.io#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-image": "^6.1.0",
+    "gulp-minify": "^3.1.0",
+    "gulp-sass": "^4.0.2"
+  }
+}
