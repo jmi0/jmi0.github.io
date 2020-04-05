@@ -51,7 +51,7 @@ $(document).ready(function() {
 
 
 function changeBackDrop() {
-  console.log('change');
+
   $('#bgimage-container').css(
     'background-image',
     `url('${$('#bgimages img')[Math.floor(Math.random() * $('#bgimages img').length)].src}')`
