@@ -1,0 +1,107 @@
+#bg-container {
+  background: url('../assets/img/twinpeaks2.jpg');
+  opacity: .1;
+  background-position: left top;
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: background-image 8s, background-position 10s, opacity 1s;
+  -moz-transition: background-image 8s, background-position 10s, opacity 1s;
+  -o-transition: background-image 8s, background-position 10s, opacity 1s;
+  transition: background-image 8s, background-position 10s, opacity 1s;
+}
+
+#bg-backdrop {
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  z-index: -2;
+  opacity: .1;
+  background-color: black;
+  -webkit-transition: background 4s, opacity 1s;
+  -moz-transition: background 4s, opacity 1s;
+  -o-transition: background 4s, opacity 1s;
+  transition: background 4s, opacity 1s;
+}
+
+
+#bl-toggle-icon-container {
+  z-index: 9999;
+  bottom: 0;
+  padding-left: 13px;
+  position: absolute;
+  img {
+    width: 55px;
+  }
+}
+
+
+#bl-toggle-icon-container:hover {
+  cursor: pointer;
+}
+
+.twin-peaks-font {
+  font-family: Avant Garde, Avantgarde, Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  font-weight: bold;
+  color: #644647;
+  letter-spacing: 10px;
+  text-shadow: 1px 1px 0 #47ff52, -1px -1px 0 #47ff52, 1px -1px 0 #47ff52, -1px 1px 0 #47ff52, 0px 1px 0 #47ff52, 1px 0px 0 #47ff52, 0px -1px 0 #47ff52, -1px 0px 0 #47ff52, 4px 2px 0 #333;
+}
+
+#directed-by-container {
+  position: absolute;
+  text-align: center;
+  line-height: 2;
+  width: 100%;
+  top: 40%;
+  min-width: 100%;
+  opacity: 0;
+
+  -webkit-transition: opacity .5s;
+  -moz-transition: opacity .5s;
+  -o-transition: opacity .5s;
+  transition: opacity .5s;
+
+  #directed-by-text-1 {
+    font-size: 30px;
+  }
+
+  #directed-by-text-2 {
+    font-size: 60px;
+    text-transform: uppercase;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #directed-by-container {
+    position: absolute;
+    text-align: center;
+    line-height: 2;
+    width: 100%;
+    top: 40%;
+    min-width: 100%;
+    opacity: 0;
+
+    -webkit-transition: opacity .5s;
+    -moz-transition: opacity .5s;
+    -o-transition: opacity .5s;
+    transition: opacity .5s;
+
+    #directed-by-text-1 {
+      font-size: 16px;
+    }
+
+    #directed-by-text-2 {
+      font-size: 28px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+
+}
