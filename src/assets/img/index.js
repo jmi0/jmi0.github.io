@@ -7,4 +7,5 @@ export { default as ProfilePic } from './profilepic.png';
 export { default as ProfilePic2 } from './profilepic2.png';
 export { default as Coffee1 } from './coffee1.png';
 export { default as TwinPeaksPines1 } from './twinpeakspines1.jpg';
+export { default as TwinPeaksFalls } from './twinpeaksfalls.jpg';
 export { default as Log } from './log.png';

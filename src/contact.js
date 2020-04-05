@@ -5,7 +5,7 @@ import './scss/contact.scss'
 const Contact = () => {
   return (
     <div>
-      <h1>Contact Webpack!</h1>
+      <h1>Contact</h1>
     </div>
   )
 }

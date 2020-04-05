@@ -7,12 +7,13 @@ import {
   TwinPeaksBG,
   TwinPeaks2BG,
   OwlCave,
-  ProfilePic
+  ProfilePic,
+  TwinPeaksFalls
 } from '../assets/img';
 
 import LauraPalmersTheme from '../assets/audio/laurapalmerstheme.mp3';
 
-const BGs = [BlackLodge2BG, BlackLodge2BG, TwinPeaksBG, TwinPeaks2BG];
+const BGs = [BlackLodgeBG, BlackLodge2BG, TwinPeaksBG, TwinPeaks2BG, TwinPeaksFalls];
 const BGPos = ['center', 'top', 'left', 'right', 'bottom'];
 const BDColors = ['red', 'black', 'white', 'blue'];
 
