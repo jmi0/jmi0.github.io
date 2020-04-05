@@ -11,6 +11,8 @@ console.log('Hey Neighbor!');
 const BACKDROP_COLORS = ['red', 'blue', 'black', 'white', 'green', 'yellow'];
 const BG_IMG_POS = ['center', 'left', 'top', 'right', 'bottom'];
 
+let inactivity_secs = 0;
+
 $(document).ready(function() {
 
   $('#profile-container').hide();
@@ -19,10 +21,15 @@ $(document).ready(function() {
   changeBackDrop();
 
   setInterval(function() {
-    changeBackDrop();
-  }, 10000);
+    inactivity_secs += 1;
+    // every thirty seconds if inactive
+    if (inactivity_secs === 30) {
+      changeBackDrop();
+      inactivity_secs = 0;
+    }
+  }, 1000);
 
-  $('#profile-container, #tpicon-container').click(function() {
+  $('body').click(function() {
     changeBackDrop();
   });
 
@@ -30,11 +37,21 @@ $(document).ready(function() {
     changeBackDrop();
   });
 
+  // reset inactivity secs
+  $(document).on('mouseover', 'body', function() {
+    inactivity_secs = 0;
+  });
+
+  $(document).on('click', 'body', function() {
+    inactivity_secs = 0;
+  });
+
+
 });
 
 
 function changeBackDrop() {
-
+  console.log('change');
   $('#bgimage-container').css(
     'background-image',
     `url('${$('#bgimages img')[Math.floor(Math.random() * $('#bgimages img').length)].src}')`
