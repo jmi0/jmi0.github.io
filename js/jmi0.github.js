@@ -6,36 +6,48 @@
  * @Last modified time: 2020-03-30T08:30:37-04:00
  */
 
-
-
 console.log('Hey Neighbor!');
+
+const BACKDROP_COLORS = ['red', 'blue', 'black', 'white', 'green', 'yellow'];
+const BG_IMG_POS = ['center', 'left', 'top', 'right', 'bottom'];
 
 $(document).ready(function() {
 
   $('#profile-container').hide();
   $('#profile-container').fadeIn(700);
 
-  /*
-  // center align
-  //$('#profile-container').css({top: getTop(), left: getLeft()});
-  $(window).resize(function() {
-    // keep this center aligned
-    //$('#profile-container').css({top: getTop(), left: getLeft()});
+  changeBackDrop();
+
+  setInterval(function() {
+    changeBackDrop();
+  }, 10000);
+
+  $('#profile-container, #tpicon-container').click(function() {
+    changeBackDrop();
   });
-  */
+
+  $(document).on('mouseover', '#profilepic', function() {
+    changeBackDrop();
+  });
 
 });
 
-/*
-function getTop() {
-  let top = ($(window).height() / 2) - ($('#profile-container').height() / 2);
-  if (top < 0) top = 0;
-  return top;
-}
 
-function getLeft() {
-  let left = ($(window).width() / 2) - ($('#profile-container').width() / 2);
-  if (left < 0) left = 0;
-  return left;
+function changeBackDrop() {
+
+  $('#bgimage-container').css(
+    'background-image',
+    `url('${$('#bgimages img')[Math.floor(Math.random() * $('#bgimages img').length)].src}')`
+  );
+
+  $('#bgimage-backdrop-container').css(
+    'background-color',
+    BACKDROP_COLORS[Math.floor(Math.random() * BACKDROP_COLORS.length)]
+  );
+
+  $('#bgimage-container').css(
+    'background-position',
+    `${BG_IMG_POS[Math.floor(Math.random() * BG_IMG_POS.length)]} ${BG_IMG_POS[Math.floor(Math.random() * BG_IMG_POS.length)]}`
+  );
+
 }
-*/

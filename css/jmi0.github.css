@@ -18,6 +18,7 @@ html, body {
   transform: translateY(-50%); }
 
 #profile-container {
+  padding: 10px;
   display: none;
   min-width: 100%; }
   #profile-container #greeting {
@@ -36,10 +37,45 @@ html, body {
   #social-links-container a {
     padding: 5px;
     text-decoration: none;
-    color: gray;
+    color: #36454f;
     -webkit-transition: color .2s;
     -moz-transition: color .2s;
     -o-transition: color .2s;
     transition: color .2s; }
   #social-links-container a:hover {
     color: black; }
+
+#bgimage-container {
+  background: url("../img/twinpeaks2.jpg");
+  opacity: .2;
+  background-position: center;
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: background 3s;
+  -moz-transition: background 3s;
+  -o-transition: background 3s;
+  transition: background 3s; }
+
+#bgimage-backdrop-container {
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  z-index: -2;
+  opacity: .1;
+  background-color: black;
+  -webkit-transition: background 3s;
+  -moz-transition: background 3s;
+  -o-transition: background 3s;
+  transition: background 3s; }
+
+#tpicon-container {
+  bottom: 0;
+  padding-left: 10px;
+  position: absolute; }
+  #tpicon-container img {
+    width: 60px; }
+
+#tpicon-container:hover {
+  cursor: pointer; }
