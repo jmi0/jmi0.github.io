@@ -81,20 +81,12 @@ body {
     color: black;
   }
 
-
-
 }
+
 
 
 @media only screen and (max-width: 600px) {
   #profile-description {
-    display: none;
-  }
-}
-
-
-@media only screen and (max-height: 400px) {
-  #profile-icon {
     display: none;
   }
 }
