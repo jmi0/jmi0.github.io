@@ -7,14 +7,15 @@ import './scss/blacklodge.scss'
 import { FaEnvelopeSquare, FaGithubSquare, FaLinkedin } from "react-icons/fa";
 
 import { ProfilePic, OwlCave, Coffee1, Log, BlackLodgeBG, BlackLodge2BG,
-  TwinPeaksBG, TwinPeaks2BG, TwinPeaksFalls, PeaksLogo } from './assets/img';
+  TwinPeaksBG, TwinPeaks2BG, PeaksLogo } from './assets/img';
 
 
 import LauraPalmersTheme from './assets/audio/laurapalmerstheme.mp3';
 
-const BGs = [BlackLodgeBG, BlackLodge2BG, TwinPeaksBG, TwinPeaks2BG, TwinPeaksFalls];
+const BGs = [BlackLodgeBG, BlackLodge2BG, TwinPeaksBG, TwinPeaks2BG];
 const BGPos = ['center', 'top', 'left', 'right', 'bottom'];
 const BDColors = ['red', 'black', 'white', 'blue'];
+
 
 class Index extends React.Component {
 
@@ -147,13 +148,14 @@ class Index extends React.Component {
               <img id='profile-pic-img' src={ProfilePic}></img>
             </a>
           </div>
-          <div id='profile-greeting'>Hi, I'm Joe <span id='profile-icon' onClick={this.blackLodgeActivate} ><img src={Coffee1}></img></span></div>
+          <div id='profile-greeting'>Hi, I'm Joe</div>
+
           <div id='profile-description'>Application Developer &nbsp; &#8226; &nbsp; Rutgers University</div>
           <div id='profile-social-container'>
             <a target="_blank" href='mailto:joseph.m.iannone@gmail.com'><FaEnvelopeSquare /></a>
             <a target="_blank" href='https://github.com/jmi0'><FaGithubSquare /></a>
             <a target="_blank" href='https://www.linkedin.com/in/joseph-iannone-7a6a91146/'><FaLinkedin /></a>
-            <a target="_blank" href=''><img src={PeaksLogo}></img></a>
+            <a id='profile-icon' onClick={this.blackLodgeActivate} ><img src={Coffee1}></img></a>
           </div>
         </div>
         <div>
