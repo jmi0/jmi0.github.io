@@ -34,6 +34,10 @@ body {
     }
   }
 
+  #profile-icon:hover {
+    cursor: pointer;
+  }
+
   #profile-greeting {
     font-size: 30px;
   }
@@ -72,6 +76,11 @@ body {
 
   a:hover {
     color: black;
+  }
+
+  img {
+    display: none;
+    height: 52px;
   }
 
 

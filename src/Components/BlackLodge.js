@@ -11,6 +11,7 @@ import {
   TwinPeaksFalls
 } from '../assets/img';
 
+
 import LauraPalmersTheme from '../assets/audio/laurapalmerstheme.mp3';
 
 const BGs = [BlackLodgeBG, BlackLodge2BG, TwinPeaksBG, TwinPeaks2BG, TwinPeaksFalls];
