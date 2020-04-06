@@ -1,3 +1,13 @@
+/**
+ * @Author: Joe Iannone <josephiannone>
+ * @Date:   2020-04-05T17:12:33-04:00
+ * @Filename: BlackLodge.js
+ * @Last modified by:   josephiannone
+ * @Last modified time: 2020-04-06T10:01:17-04:00
+ */
+
+
+
 import React from 'react'
 import ReactDOM from 'react-dom'
 import '../scss/blacklodge.scss'
@@ -36,10 +46,6 @@ class BlackLodge extends React.Component {
     }
 
     this.activate = this.activate.bind(this);
-
-  }
-
-  componentDidMount() {
 
   }
 

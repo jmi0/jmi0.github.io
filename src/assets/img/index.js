@@ -1,3 +1,13 @@
+/**
+ * @Author: Joe Iannone <josephiannone>
+ * @Date:   2020-04-05T17:12:33-04:00
+ * @Filename: index.js
+ * @Last modified by:   josephiannone
+ * @Last modified time: 2020-04-06T11:19:55-04:00
+ */
+
+
+
 export { default as TwinPeaksBG } from './twinpeaks.jpg';
 export { default as TwinPeaks2BG } from './twinpeaks2.jpg';
 export { default as BlackLodgeBG } from './blacklodge.jpg';

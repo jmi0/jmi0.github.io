@@ -1,3 +1,13 @@
+/**
+ * @Author: Joe Iannone <josephiannone>
+ * @Date:   2020-04-01T10:32:26-04:00
+ * @Filename: webpack.config.js
+ * @Last modified by:   josephiannone
+ * @Last modified time: 2020-04-06T11:20:23-04:00
+ */
+
+
+
 const path = require('path');
 const webpackPagePlugins = require('./webpack.page.plugins.js');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');

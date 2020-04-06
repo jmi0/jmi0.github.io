@@ -1,3 +1,13 @@
+/**
+ * @Author: Joe Iannone <josephiannone>
+ * @Date:   2020-04-04T14:55:49-04:00
+ * @Filename: webpack.page.plugins.js
+ * @Last modified by:   josephiannone
+ * @Last modified time: 2020-04-06T11:20:31-04:00
+ */
+
+
+
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 
 module.exports = {
