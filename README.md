@@ -1,1 +1,1 @@
-### This is the build from my reactjs app at [joeiannone.com](http://joeiannone.com)
+### This is just a redirct to my reactjs app at [joeiannone.com](http://joeiannone.com)
